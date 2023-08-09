@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A395545-1459-445A-BD9D-211E4B0A5DBC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WWM</RootNamespace>
+    <AssemblyName>WWM</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>S:\server1\html\dev\wwm\download\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://dev.nhendel.de/dev/wwm/download/</InstallUrl>
+    <SupportUrl>http://dev.nhendel.de/wwm/</SupportUrl>
+    <ErrorReportUrl>http://dev.nhendel.de/wwm/fehler/</ErrorReportUrl>
+    <TargetCulture>de-DE</TargetCulture>
+    <ProductName>Wer wird Milionär - Erzgebirgsedition</ProductName>
+    <PublisherName>Nathanael Hendel</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>33</ApplicationRevision>
+    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B4C91DBD5B272DB72B35CCB54C2B5DC11A5DF84F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WWM_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>WWM.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="wwm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wwm.Designer.cs">
+      <DependentUpon>wwm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="wwm.resx">
+      <DependentUpon>wwm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="WWM_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 und x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\butto_frage_leer.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frage_gross_leer.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wwm_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hintergunrd_pojekt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\antwort_hintergrund.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hintergunrd_pojekt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50_50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DPublikum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nochmal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ende.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-dada-illustration-red-cross-png-file-5a7585de1c9726.6488086415176514221171.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50_50_aktiviert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50_50_genommen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DPublikum_aktiviert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DPublikum_genommen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nochmal_aktiviert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nochmal_genommen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\experte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\experte_aktiviert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\experte_genommen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\logo2.png" />
+    <Content Include="Resources\logo3.png" />
+    <None Include="Resources\start_41.jpg" />
+    <None Include="Resources\start_51.jpg" />
+    <None Include="Resources\start_5.jpg" />
+    <None Include="Resources\start_4.jpg" />
+    <None Include="Resources\start_3.jpg" />
+    <None Include="Resources\start_2.jpg" />
+    <None Include="Resources\start_1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
