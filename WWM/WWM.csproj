@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>true</IsWebBootstrapper>
-    <PublishUrl>S:\server1\html\dev\wwm\download\</PublishUrl>
+    <PublishUrl>S:\server1\html\wwm\download\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -23,15 +23,15 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>http://dev.nhendel.de/dev/wwm/download/</InstallUrl>
-    <SupportUrl>http://dev.nhendel.de/wwm/</SupportUrl>
-    <ErrorReportUrl>http://dev.nhendel.de/wwm/fehler/</ErrorReportUrl>
+    <InstallUrl>http://dev.nhendel.de/wwm/download/</InstallUrl>
+    <SupportUrl>http://dev.nhendel.de/wwm/index.html</SupportUrl>
+    <ErrorReportUrl>http://dev.nhendel.de/wwm/fehler.html</ErrorReportUrl>
     <TargetCulture>de-DE</TargetCulture>
     <ProductName>Wer wird Milionär - Erzgebirgsedition</ProductName>
     <PublisherName>Nathanael Hendel</PublisherName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>33</ApplicationRevision>
+    <ApplicationRevision>37</ApplicationRevision>
     <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>

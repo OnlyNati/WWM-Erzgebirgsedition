@@ -39,11 +39,7 @@ namespace WWM
         int nochmalstatus = 1;
 
         int buttoncount = 1;
-
-
-
-
-        
+       
 
         public wwm()
         {
@@ -732,19 +728,19 @@ namespace WWM
                 background.Play();
                 pb_start.BackgroundImage = WWM.Properties.Resources.start_1;
                 pb_start.Refresh();
-                Thread.Sleep(2 * 1000);
+                Thread.Sleep(3 * 1000);
                 pb_start.BackgroundImage = WWM.Properties.Resources.start_2;
                 pb_start.Refresh();
                 Thread.Sleep(4 * 1000);
                 pb_start.BackgroundImage = WWM.Properties.Resources.start_3;
                 pb_start.Refresh();
-                Thread.Sleep(4 * 1000);
+                Thread.Sleep(6 * 1000);
                 pb_start.BackgroundImage = WWM.Properties.Resources.start_41;
                 pb_start.Refresh();
-                Thread.Sleep(3 * 1000);
+                Thread.Sleep(7 * 1000);
                 pb_start.BackgroundImage = WWM.Properties.Resources.start_51;
                 pb_start.Refresh();
-                Thread.Sleep(19 * 1000);
+                Thread.Sleep(13 * 1000);
             }
             
             pb_start.Visible = false;
