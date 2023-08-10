@@ -590,7 +590,7 @@ namespace WWM
                         MessageBox.Show("File 'success.wav' fehlt!");
                     }
 
-                    bt_d.ForeColor = Color.DarkGreen;
+                    bt_d.ForeColor = Color.Green;
                     
 
                     if (nochmalstatus >= 2)
@@ -735,10 +735,10 @@ namespace WWM
                 pb_start.BackgroundImage = WWM.Properties.Resources.start_3;
                 pb_start.Refresh();
                 Thread.Sleep(6 * 1000);
-                pb_start.BackgroundImage = WWM.Properties.Resources.start_41;
+                pb_start.BackgroundImage = WWM.Properties.Resources.start_4;
                 pb_start.Refresh();
                 Thread.Sleep(7 * 1000);
-                pb_start.BackgroundImage = WWM.Properties.Resources.start_51;
+                pb_start.BackgroundImage = WWM.Properties.Resources.start_5;
                 pb_start.Refresh();
                 Thread.Sleep(13 * 1000);
             }

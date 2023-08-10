@@ -274,6 +274,16 @@ namespace WWM.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap start_11 {
+            get {
+                object obj = ResourceManager.GetObject("start_11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap start_2 {
             get {
                 object obj = ResourceManager.GetObject("start_2", resourceCulture);
@@ -304,29 +314,9 @@ namespace WWM.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap start_41 {
-            get {
-                object obj = ResourceManager.GetObject("start_41", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap start_5 {
             get {
                 object obj = ResourceManager.GetObject("start_5", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap start_51 {
-            get {
-                object obj = ResourceManager.GetObject("start_51", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

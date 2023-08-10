@@ -31,7 +31,7 @@
     <PublisherName>Nathanael Hendel</PublisherName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>37</ApplicationRevision>
+    <ApplicationRevision>38</ApplicationRevision>
     <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -201,6 +201,11 @@
   <ItemGroup>
     <Content Include="Resources\logo2.png" />
     <Content Include="Resources\logo3.png" />
+    <None Include="Resources\start_52.jpg" />
+    <None Include="Resources\start_42.jpg" />
+    <None Include="Resources\start_31.jpg" />
+    <None Include="Resources\start_21.jpg" />
+    <None Include="Resources\start_11.jpg" />
     <None Include="Resources\start_41.jpg" />
     <None Include="Resources\start_51.jpg" />
     <None Include="Resources\start_5.jpg" />
