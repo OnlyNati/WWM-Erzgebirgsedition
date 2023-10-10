@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//using static System.Net.WebRequestMethods;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrayNotify;
 
 namespace WWM
@@ -38,8 +39,11 @@ namespace WWM
         string aktantwort;
         int nochmalstatus = 1;
 
-        int buttoncount = 1;
-       
+        int buttoncounta = 1;
+        int buttoncountb = 1;
+        int buttoncountc = 1;
+        int buttoncountd = 1;
+
 
         public wwm()
         {
@@ -55,8 +59,8 @@ namespace WWM
                 Directory.CreateDirectory(programmpfad + @"\WWM\config\");
                 Directory.CreateDirectory(programmpfad + @"\WWM\musik\");
                 MessageBox.Show("Die Ordner: " + programmpfad + @"\WWM\config\" + " und\n" + programmpfad + @"\WWM\musik\" + " müssen befüllt werden!");
-                //Application.Exit();
-                Environment.Exit(0);
+                Application.Exit();
+                //Environment.Exit(0);
                 //Close();
             }
 
@@ -91,8 +95,8 @@ namespace WWM
 
                                     MessageBox.Show("Keine Lösungen in: " + programmpfad + @"\WWM\config\loesung.txt" + " hinterlegt!");
                                     //Application.Exit();
-                                    Environment.Exit(0);
-                                    //Close();
+                                    //Environment.Exit(0);
+                                    Application.Exit();
                                 }
 
                             }
@@ -176,17 +180,18 @@ namespace WWM
                 catch 
                 {
                     MessageBox.Show("Konfigdatein konnten nicht eingelesen werden. Programm wird beendet.");
-                    //Application.Exit();
-                    Environment.Exit(0);
+                    Application.Exit();
+                    //Environment.Exit(0);
+                    //Close();
                 }
                 long arraylaenge = fragenliste.LongCount();
             }
             catch
             {
                 MessageBox.Show("Konfigdatein wurden erst erstellt und müssen befüllt werden.");
-                //Application.Exit();
+                Application.Exit();
                 //Close();
-                Environment.Exit(0);
+                
             }
         }
 
@@ -239,6 +244,7 @@ namespace WWM
                     break;
                 case 7:
                     lb_07.ForeColor = Color.DarkOrange;
+                    //System.Diagnostics.Process.Start("http://natimx.de/spielwiese/video.mp4");
                     stage++;
                     break;
                 case 8:
@@ -423,15 +429,21 @@ namespace WWM
         private void bt_a_Click(object sender, EventArgs e)
         {
             aktantwort = "a";
-            if (buttoncount == 1)
+            buttoncountb = 1;
+            buttoncountc = 1;
+            buttoncountd = 1;
+
+            if (buttoncounta == 1)
             {
                 bt_a.ForeColor = Color.DarkOrange;
-                buttoncount++;
-                bt_b.Enabled = false;
-                bt_c.Enabled = false;
-                bt_d.Enabled = false;
+                buttoncounta++;
+
+                bt_b.ForeColor = Color.White;
+                bt_c.ForeColor = Color.White;
+                bt_d.ForeColor = Color.White;
+                
             }
-            else if (buttoncount == 2)
+            else if (buttoncounta == 2)
             {
                 string antwort;
                 antwort = "a";
@@ -449,7 +461,10 @@ namespace WWM
                         MessageBox.Show("File 'success.wav' fehlt!");
                     }
 
-                    bt_a.ForeColor = Color.DarkGreen;
+                    bt_a.ForeColor = Color.LawnGreen;
+                    bt_b.Enabled = false;
+                    bt_c.Enabled = false;
+                    bt_d.Enabled = false;
 
                     if (nochmalstatus >= 2)
                     {
@@ -460,25 +475,34 @@ namespace WWM
                 else
                 {
                     //MessageBox.Show("Falsche!");
-                    bt_a.ForeColor = Color.DarkRed;
+                    bt_a.ForeColor = Color.Red;
+                    bt_b.Enabled = false;
+                    bt_c.Enabled = false;
+                    bt_d.Enabled = false;
                     //bt_a.Enabled = false;
                 }
-                buttoncount = 1;
+                buttoncounta = 1;
             }
         }
 
         private void bt_b_Click(object sender, EventArgs e)
         {
             aktantwort = "b";
-            if (buttoncount == 1)
+            buttoncounta = 1;
+            buttoncountc = 1;
+            buttoncountd = 1;
+
+            if (buttoncountb == 1)
             {
                 bt_b.ForeColor = Color.DarkOrange;
-                buttoncount++;
-                bt_a.Enabled = false;
-                bt_c.Enabled = false;
-                bt_d.Enabled = false;
+                buttoncountb++;
+
+                bt_a.ForeColor = Color.White;
+                bt_c.ForeColor = Color.White;
+                bt_d.ForeColor = Color.White;
+                
             }
-            else if (buttoncount == 2)
+            else if (buttoncountb == 2)
             {
                 string antwort;
                 antwort = "b";
@@ -496,8 +520,11 @@ namespace WWM
                     }
                     //MessageBox.Show("Richtig!");
 
-                    bt_b.ForeColor = Color.DarkGreen;
-                    
+                    bt_b.ForeColor = Color.LawnGreen;
+                    bt_a.Enabled = false;
+                    bt_c.Enabled = false;
+                    bt_d.Enabled = false;
+
 
                     if (nochmalstatus >= 2)
                     {
@@ -508,25 +535,34 @@ namespace WWM
                 else
                 {
                     //MessageBox.Show("Falsche!");
-                    bt_b.ForeColor = Color.DarkRed;
+                    bt_b.ForeColor = Color.Red;
+                    bt_a.Enabled = false;
+                    bt_c.Enabled = false;
+                    bt_d.Enabled = false;
                     //bt_b.Enabled = false;
                 }
-                buttoncount = 1;
+                buttoncountb = 1;
             }
         }
 
         private void bt_c_Click(object sender, EventArgs e)
         {
             aktantwort = "c";
-            if (buttoncount == 1)
+            buttoncounta = 1;
+            buttoncountb = 1;
+            buttoncountd = 1;
+
+            if (buttoncountc == 1)
             {
                 bt_c.ForeColor = Color.DarkOrange;
-                buttoncount++;
-                bt_a.Enabled = false;
-                bt_b.Enabled = false;
-                bt_d.Enabled = false;
+                buttoncountc++;
+
+                bt_a.ForeColor = Color.White;
+                bt_b.ForeColor= Color.White;
+                bt_d.ForeColor= Color.White;
+                
             }
-            else if (buttoncount == 2)
+            else if (buttoncountc == 2)
             {
                 string antwort;
                 antwort = "c";
@@ -543,8 +579,11 @@ namespace WWM
                         MessageBox.Show("File 'success.wav' fehlt!");
                     }
 
-                    bt_c.ForeColor = Color.DarkGreen;
-                    
+                    bt_c.ForeColor = Color.LawnGreen;
+                    bt_a.Enabled = false;
+                    bt_b.Enabled = false;
+                    bt_d.Enabled = false;
+
 
                     if (nochmalstatus >= 2)
                     {
@@ -555,25 +594,32 @@ namespace WWM
                 else
                 {
                     //MessageBox.Show("Falsche!");
-                    bt_c.ForeColor = Color.DarkRed;
+                    bt_c.ForeColor = Color.Red;
+                    bt_a.Enabled = false;
+                    bt_b.Enabled = false;
+                    bt_d.Enabled = false;
                     //bt_c.Enabled = false;
                 }
-                buttoncount = 1;
+                buttoncountc = 1;
             }
         }
 
         private void bt_d_Click(object sender, EventArgs e)
         {
             aktantwort = "d";
-            if (buttoncount == 1)
+            buttoncounta = 1;
+            buttoncountb = 1; ;
+            buttoncountc = 1;
+            if (buttoncountd == 1)
             {
                 bt_d.ForeColor = Color.DarkOrange;
-                buttoncount++;
-                bt_a.Enabled = false;
-                bt_b.Enabled = false;
-                bt_c.Enabled = false;
+                buttoncountd++;
+                bt_a.ForeColor = Color.White;
+                bt_b.ForeColor = Color.White;
+                bt_c.ForeColor= Color.White;
+                
             }
-            else if (buttoncount == 2)
+            else if (buttoncountd == 2)
             {
                 string antwort;
                 antwort = "d";
@@ -590,8 +636,11 @@ namespace WWM
                         MessageBox.Show("File 'success.wav' fehlt!");
                     }
 
-                    bt_d.ForeColor = Color.Green;
-                    
+                    bt_d.ForeColor = Color.LawnGreen;
+                    bt_a.Enabled = false;
+                    bt_b.Enabled = false;
+                    bt_c.Enabled = false;
+
 
                     if (nochmalstatus >= 2)
                     {
@@ -602,10 +651,13 @@ namespace WWM
                 else
                 {
                     //MessageBox.Show("Falsche!");
-                    bt_d.ForeColor = Color.DarkRed;
+                    bt_d.ForeColor = Color.Red;
+                    bt_a.Enabled = false;
+                    bt_b.Enabled = false;
+                    bt_c.Enabled = false;
                     //bt_d.Enabled = false;
                 }
-                buttoncount = 1;
+                buttoncountd = 1;
             }
         }
 
@@ -724,6 +776,7 @@ namespace WWM
             }
             else
             {
+                
                 SoundPlayer background = new SoundPlayer(programmpfad + @"\WWM\musik\start.wav");
                 background.Play();
                 pb_start.BackgroundImage = WWM.Properties.Resources.start_1;
@@ -741,6 +794,7 @@ namespace WWM
                 pb_start.BackgroundImage = WWM.Properties.Resources.start_5;
                 pb_start.Refresh();
                 Thread.Sleep(13 * 1000);
+                
             }
             
             pb_start.Visible = false;

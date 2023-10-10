@@ -31,7 +31,7 @@
     <PublisherName>Nathanael Hendel</PublisherName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>38</ApplicationRevision>
+    <ApplicationRevision>45</ApplicationRevision>
     <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -85,10 +85,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="hilfe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hilfe.Designer.cs">
+      <DependentUpon>hilfe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="import.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="import.Designer.cs">
+      <DependentUpon>import.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="startup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="startup.Designer.cs">
+      <DependentUpon>startup.cs</DependentUpon>
     </Compile>
     <Compile Include="wwm.cs">
       <SubType>Form</SubType>
@@ -98,11 +116,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="hilfe.resx">
+      <DependentUpon>hilfe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="import.resx">
+      <DependentUpon>import.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="startup.resx">
+      <DependentUpon>startup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="wwm.resx">
       <DependentUpon>wwm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
@@ -199,8 +226,25 @@
     <None Include="Resources\logo.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\zip_ent.JPG" />
+    <None Include="Resources\zip_entpacken.jpg" />
+    <None Include="Resources\anleitung.png" />
+    <None Include="Resources\inhalt_zip.JPG" />
+    <None Include="Resources\config_ordner.JPG" />
+    <None Include="Resources\config_ordner_inhalte.png" />
+    <None Include="Resources\datenimport.JPG" />
     <Content Include="Resources\logo2.png" />
     <Content Include="Resources\logo3.png" />
+    <None Include="Resources\spielfeld_erklaerung.bmp" />
+    <None Include="Resources\start_53.jpg" />
+    <None Include="Resources\start_43.jpg" />
+    <None Include="Resources\start_32.jpg" />
+    <None Include="Resources\start_22.jpg" />
+    <None Include="Resources\start_12.jpg" />
+    <None Include="Resources\start_421.jpg" />
+    <None Include="Resources\start_311.jpg" />
+    <None Include="Resources\start_211.jpg" />
+    <None Include="Resources\start_111.jpg" />
     <None Include="Resources\start_52.jpg" />
     <None Include="Resources\start_42.jpg" />
     <None Include="Resources\start_31.jpg" />

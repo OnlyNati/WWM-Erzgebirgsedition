@@ -16,7 +16,8 @@ namespace WWM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new wwm());
+            //Application.Run(new wwm());
+            Application.Run(new startup());
         }
     }
 }

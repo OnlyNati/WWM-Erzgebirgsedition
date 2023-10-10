@@ -64,6 +64,13 @@
             this.pb_logo = new System.Windows.Forms.PictureBox();
             this.lb_unterschrift = new System.Windows.Forms.Label();
             this.lb_ende = new System.Windows.Forms.Label();
+            this.lb_test1 = new System.Windows.Forms.Label();
+            this.lb_test2 = new System.Windows.Forms.Label();
+            this.lb_test3 = new System.Windows.Forms.Label();
+            this.lb_test4 = new System.Windows.Forms.Label();
+            this.lb_test5 = new System.Windows.Forms.Label();
+            this.lb_test6 = new System.Windows.Forms.Label();
+            this.lb_test7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_kreuza)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_kreuzb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_kreuzc)).BeginInit();
@@ -89,7 +96,6 @@
             // bt_ende
             // 
             this.bt_ende.BackColor = System.Drawing.Color.Transparent;
-            this.bt_ende.BackgroundImage = global::WWM.Properties.Resources.ende;
             this.bt_ende.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bt_ende.FlatAppearance.BorderSize = 0;
             this.bt_ende.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -128,11 +134,11 @@
             this.bt_d.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.bt_d.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bt_d.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_d.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_d.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_d.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.bt_d.Location = new System.Drawing.Point(1035, 970);
+            this.bt_d.Location = new System.Drawing.Point(1115, 970);
             this.bt_d.Name = "bt_d";
-            this.bt_d.Size = new System.Drawing.Size(709, 82);
+            this.bt_d.Size = new System.Drawing.Size(629, 82);
             this.bt_d.TabIndex = 4;
             this.bt_d.Text = "Antwort D";
             this.bt_d.UseVisualStyleBackColor = false;
@@ -146,7 +152,7 @@
             this.bt_c.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.bt_c.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bt_c.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_c.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_c.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_c.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.bt_c.Location = new System.Drawing.Point(202, 970);
             this.bt_c.Name = "bt_c";
@@ -164,11 +170,11 @@
             this.bt_b.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.bt_b.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bt_b.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_b.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_b.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_b.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.bt_b.Location = new System.Drawing.Point(1035, 884);
+            this.bt_b.Location = new System.Drawing.Point(1115, 884);
             this.bt_b.Name = "bt_b";
-            this.bt_b.Size = new System.Drawing.Size(709, 82);
+            this.bt_b.Size = new System.Drawing.Size(629, 82);
             this.bt_b.TabIndex = 2;
             this.bt_b.Text = "Antwort B";
             this.bt_b.UseVisualStyleBackColor = false;
@@ -182,7 +188,7 @@
             this.bt_a.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.bt_a.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bt_a.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_a.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_a.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_a.ForeColor = System.Drawing.Color.Transparent;
             this.bt_a.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.bt_a.Location = new System.Drawing.Point(202, 884);
@@ -198,13 +204,16 @@
             // 
             this.lb_frage.AutoSize = true;
             this.lb_frage.BackColor = System.Drawing.Color.Transparent;
-            this.lb_frage.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_frage.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_frage.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lb_frage.Location = new System.Drawing.Point(162, 790);
+            this.lb_frage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lb_frage.Location = new System.Drawing.Point(161, 755);
+            this.lb_frage.MaximumSize = new System.Drawing.Size(1700, 0);
+            this.lb_frage.MinimumSize = new System.Drawing.Size(0, 100);
             this.lb_frage.Name = "lb_frage";
-            this.lb_frage.Size = new System.Drawing.Size(0, 31);
+            this.lb_frage.Size = new System.Drawing.Size(0, 100);
             this.lb_frage.TabIndex = 0;
-            this.lb_frage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_frage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lb_frage.Click += new System.EventHandler(this.lb_frage_Click);
             // 
             // bt_publikum
@@ -271,7 +280,7 @@
             this.pb_kreuzc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_kreuzc.Location = new System.Drawing.Point(202, 985);
             this.pb_kreuzc.Name = "pb_kreuzc";
-            this.pb_kreuzc.Size = new System.Drawing.Size(715, 67);
+            this.pb_kreuzc.Size = new System.Drawing.Size(709, 67);
             this.pb_kreuzc.TabIndex = 12;
             this.pb_kreuzc.TabStop = false;
             this.pb_kreuzc.Visible = false;
@@ -292,11 +301,11 @@
             // 
             this.lb_01.AutoSize = true;
             this.lb_01.BackColor = System.Drawing.Color.Transparent;
-            this.lb_01.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_01.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_01.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lb_01.Location = new System.Drawing.Point(1616, 512);
+            this.lb_01.Location = new System.Drawing.Point(1619, 581);
             this.lb_01.Name = "lb_01";
-            this.lb_01.Size = new System.Drawing.Size(94, 24);
+            this.lb_01.Size = new System.Drawing.Size(131, 31);
             this.lb_01.TabIndex = 14;
             this.lb_01.Text = "1   ET 50";
             // 
@@ -304,11 +313,11 @@
             // 
             this.lb_02.AutoSize = true;
             this.lb_02.BackColor = System.Drawing.Color.Transparent;
-            this.lb_02.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_02.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_02.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lb_02.Location = new System.Drawing.Point(1616, 488);
+            this.lb_02.Location = new System.Drawing.Point(1619, 550);
             this.lb_02.Name = "lb_02";
-            this.lb_02.Size = new System.Drawing.Size(105, 24);
+            this.lb_02.Size = new System.Drawing.Size(147, 31);
             this.lb_02.TabIndex = 15;
             this.lb_02.Text = "2   ET 100";
             // 
@@ -316,11 +325,11 @@
             // 
             this.lb_03.AutoSize = true;
             this.lb_03.BackColor = System.Drawing.Color.Transparent;
-            this.lb_03.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_03.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_03.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lb_03.Location = new System.Drawing.Point(1616, 464);
+            this.lb_03.Location = new System.Drawing.Point(1619, 519);
             this.lb_03.Name = "lb_03";
-            this.lb_03.Size = new System.Drawing.Size(105, 24);
+            this.lb_03.Size = new System.Drawing.Size(147, 31);
             this.lb_03.TabIndex = 16;
             this.lb_03.Text = "3   ET 200";
             // 
@@ -328,11 +337,11 @@
             // 
             this.lb_04.AutoSize = true;
             this.lb_04.BackColor = System.Drawing.Color.Transparent;
-            this.lb_04.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_04.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lb_04.Location = new System.Drawing.Point(1616, 438);
+            this.lb_04.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_04.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lb_04.Location = new System.Drawing.Point(1619, 490);
             this.lb_04.Name = "lb_04";
-            this.lb_04.Size = new System.Drawing.Size(105, 24);
+            this.lb_04.Size = new System.Drawing.Size(147, 31);
             this.lb_04.TabIndex = 17;
             this.lb_04.Text = "4   ET 300";
             // 
@@ -340,11 +349,11 @@
             // 
             this.lb_05.AutoSize = true;
             this.lb_05.BackColor = System.Drawing.Color.Transparent;
-            this.lb_05.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_05.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_05.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lb_05.Location = new System.Drawing.Point(1616, 414);
+            this.lb_05.Location = new System.Drawing.Point(1619, 459);
             this.lb_05.Name = "lb_05";
-            this.lb_05.Size = new System.Drawing.Size(105, 24);
+            this.lb_05.Size = new System.Drawing.Size(147, 31);
             this.lb_05.TabIndex = 18;
             this.lb_05.Text = "5   ET 500";
             // 
@@ -352,11 +361,11 @@
             // 
             this.lb_06.AutoSize = true;
             this.lb_06.BackColor = System.Drawing.Color.Transparent;
-            this.lb_06.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_06.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_06.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lb_06.Location = new System.Drawing.Point(1616, 390);
+            this.lb_06.Location = new System.Drawing.Point(1619, 428);
             this.lb_06.Name = "lb_06";
-            this.lb_06.Size = new System.Drawing.Size(122, 24);
+            this.lb_06.Size = new System.Drawing.Size(172, 31);
             this.lb_06.TabIndex = 19;
             this.lb_06.Text = "6   ET 1.000";
             // 
@@ -364,11 +373,11 @@
             // 
             this.lb_07.AutoSize = true;
             this.lb_07.BackColor = System.Drawing.Color.Transparent;
-            this.lb_07.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_07.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_07.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lb_07.Location = new System.Drawing.Point(1616, 366);
+            this.lb_07.Location = new System.Drawing.Point(1619, 395);
             this.lb_07.Name = "lb_07";
-            this.lb_07.Size = new System.Drawing.Size(122, 24);
+            this.lb_07.Size = new System.Drawing.Size(172, 31);
             this.lb_07.TabIndex = 20;
             this.lb_07.Text = "7   ET 2.000";
             // 
@@ -376,11 +385,11 @@
             // 
             this.lb_08.AutoSize = true;
             this.lb_08.BackColor = System.Drawing.Color.Transparent;
-            this.lb_08.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_08.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lb_08.Location = new System.Drawing.Point(1616, 342);
+            this.lb_08.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_08.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lb_08.Location = new System.Drawing.Point(1619, 364);
             this.lb_08.Name = "lb_08";
-            this.lb_08.Size = new System.Drawing.Size(122, 24);
+            this.lb_08.Size = new System.Drawing.Size(172, 31);
             this.lb_08.TabIndex = 21;
             this.lb_08.Text = "8   ET 4.000";
             // 
@@ -388,11 +397,11 @@
             // 
             this.lb_09.AutoSize = true;
             this.lb_09.BackColor = System.Drawing.Color.Transparent;
-            this.lb_09.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_09.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_09.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lb_09.Location = new System.Drawing.Point(1616, 318);
+            this.lb_09.Location = new System.Drawing.Point(1619, 333);
             this.lb_09.Name = "lb_09";
-            this.lb_09.Size = new System.Drawing.Size(122, 24);
+            this.lb_09.Size = new System.Drawing.Size(172, 31);
             this.lb_09.TabIndex = 22;
             this.lb_09.Text = "9   ET 8.000";
             // 
@@ -400,11 +409,11 @@
             // 
             this.lb_10.AutoSize = true;
             this.lb_10.BackColor = System.Drawing.Color.Transparent;
-            this.lb_10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lb_10.Location = new System.Drawing.Point(1605, 295);
+            this.lb_10.Location = new System.Drawing.Point(1605, 305);
             this.lb_10.Name = "lb_10";
-            this.lb_10.Size = new System.Drawing.Size(144, 24);
+            this.lb_10.Size = new System.Drawing.Size(204, 31);
             this.lb_10.TabIndex = 23;
             this.lb_10.Text = "10   ET 16.000";
             // 
@@ -412,11 +421,11 @@
             // 
             this.lb_11.AutoSize = true;
             this.lb_11.BackColor = System.Drawing.Color.Transparent;
-            this.lb_11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lb_11.Location = new System.Drawing.Point(1605, 271);
+            this.lb_11.Location = new System.Drawing.Point(1605, 274);
             this.lb_11.Name = "lb_11";
-            this.lb_11.Size = new System.Drawing.Size(144, 24);
+            this.lb_11.Size = new System.Drawing.Size(204, 31);
             this.lb_11.TabIndex = 24;
             this.lb_11.Text = "11   ET 32.000";
             // 
@@ -424,11 +433,11 @@
             // 
             this.lb_12.AutoSize = true;
             this.lb_12.BackColor = System.Drawing.Color.Transparent;
-            this.lb_12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_12.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lb_12.Location = new System.Drawing.Point(1605, 248);
+            this.lb_12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lb_12.Location = new System.Drawing.Point(1605, 243);
             this.lb_12.Name = "lb_12";
-            this.lb_12.Size = new System.Drawing.Size(144, 24);
+            this.lb_12.Size = new System.Drawing.Size(204, 31);
             this.lb_12.TabIndex = 25;
             this.lb_12.Text = "12   ET 64.000";
             // 
@@ -436,11 +445,11 @@
             // 
             this.lb_13.AutoSize = true;
             this.lb_13.BackColor = System.Drawing.Color.Transparent;
-            this.lb_13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_13.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lb_13.Location = new System.Drawing.Point(1605, 224);
+            this.lb_13.Location = new System.Drawing.Point(1605, 212);
             this.lb_13.Name = "lb_13";
-            this.lb_13.Size = new System.Drawing.Size(155, 24);
+            this.lb_13.Size = new System.Drawing.Size(220, 31);
             this.lb_13.TabIndex = 26;
             this.lb_13.Text = "13   ET 125.000";
             // 
@@ -448,11 +457,11 @@
             // 
             this.lb_14.AutoSize = true;
             this.lb_14.BackColor = System.Drawing.Color.Transparent;
-            this.lb_14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_14.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lb_14.Location = new System.Drawing.Point(1605, 200);
+            this.lb_14.Location = new System.Drawing.Point(1605, 181);
             this.lb_14.Name = "lb_14";
-            this.lb_14.Size = new System.Drawing.Size(155, 24);
+            this.lb_14.Size = new System.Drawing.Size(220, 31);
             this.lb_14.TabIndex = 27;
             this.lb_14.Text = "14   ET 250.000";
             // 
@@ -460,11 +469,11 @@
             // 
             this.lb_15.AutoSize = true;
             this.lb_15.BackColor = System.Drawing.Color.Transparent;
-            this.lb_15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_15.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lb_15.Location = new System.Drawing.Point(1605, 176);
+            this.lb_15.Location = new System.Drawing.Point(1605, 150);
             this.lb_15.Name = "lb_15";
-            this.lb_15.Size = new System.Drawing.Size(155, 24);
+            this.lb_15.Size = new System.Drawing.Size(220, 31);
             this.lb_15.TabIndex = 28;
             this.lb_15.Text = "15   ET 500.000";
             // 
@@ -488,11 +497,11 @@
             // 
             this.lb_16.AutoSize = true;
             this.lb_16.BackColor = System.Drawing.Color.Transparent;
-            this.lb_16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_16.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lb_16.Location = new System.Drawing.Point(1605, 152);
+            this.lb_16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lb_16.Location = new System.Drawing.Point(1605, 119);
             this.lb_16.Name = "lb_16";
-            this.lb_16.Size = new System.Drawing.Size(198, 24);
+            this.lb_16.Size = new System.Drawing.Size(275, 31);
             this.lb_16.TabIndex = 30;
             this.lb_16.Text = "16   Erzgebirgsionär";
             // 
@@ -555,16 +564,108 @@
             // 
             // lb_ende
             // 
-            this.lb_ende.AutoSize = true;
             this.lb_ende.BackColor = System.Drawing.Color.Transparent;
-            this.lb_ende.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_ende.ForeColor = System.Drawing.SystemColors.Control;
-            this.lb_ende.Location = new System.Drawing.Point(518, 772);
+            this.lb_ende.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ende.ForeColor = System.Drawing.Color.Transparent;
+            this.lb_ende.Image = global::WWM.Properties.Resources.hintergunrd_pojekt;
+            this.lb_ende.Location = new System.Drawing.Point(-1, 717);
             this.lb_ende.Name = "lb_ende";
-            this.lb_ende.Size = new System.Drawing.Size(994, 55);
+            this.lb_ende.Size = new System.Drawing.Size(1920, 363);
             this.lb_ende.TabIndex = 35;
-            this.lb_ende.Text = " >>> HERZLICHEN GLÜCKWUNSCH!  <<<";
+            this.lb_ende.Text = "Herzlichen Glückwunsch an unsere Kandidatin \r\nMargret Pflugfelder";
+            this.lb_ende.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lb_ende.Visible = false;
+            // 
+            // lb_test1
+            // 
+            this.lb_test1.AutoSize = true;
+            this.lb_test1.BackColor = System.Drawing.Color.Transparent;
+            this.lb_test1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_test1.ForeColor = System.Drawing.Color.DarkGreen;
+            this.lb_test1.Location = new System.Drawing.Point(513, 827);
+            this.lb_test1.Name = "lb_test1";
+            this.lb_test1.Size = new System.Drawing.Size(128, 42);
+            this.lb_test1.TabIndex = 36;
+            this.lb_test1.Text = "Test 1";
+            this.lb_test1.Visible = false;
+            // 
+            // lb_test2
+            // 
+            this.lb_test2.AutoSize = true;
+            this.lb_test2.BackColor = System.Drawing.Color.Transparent;
+            this.lb_test2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_test2.ForeColor = System.Drawing.Color.ForestGreen;
+            this.lb_test2.Location = new System.Drawing.Point(672, 827);
+            this.lb_test2.Name = "lb_test2";
+            this.lb_test2.Size = new System.Drawing.Size(128, 42);
+            this.lb_test2.TabIndex = 37;
+            this.lb_test2.Text = "Test 2";
+            this.lb_test2.Visible = false;
+            // 
+            // lb_test3
+            // 
+            this.lb_test3.AutoSize = true;
+            this.lb_test3.BackColor = System.Drawing.Color.Transparent;
+            this.lb_test3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_test3.ForeColor = System.Drawing.Color.Green;
+            this.lb_test3.Location = new System.Drawing.Point(832, 827);
+            this.lb_test3.Name = "lb_test3";
+            this.lb_test3.Size = new System.Drawing.Size(128, 42);
+            this.lb_test3.TabIndex = 38;
+            this.lb_test3.Text = "Test 3";
+            this.lb_test3.Visible = false;
+            // 
+            // lb_test4
+            // 
+            this.lb_test4.AutoSize = true;
+            this.lb_test4.BackColor = System.Drawing.Color.Transparent;
+            this.lb_test4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_test4.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lb_test4.Location = new System.Drawing.Point(982, 827);
+            this.lb_test4.Name = "lb_test4";
+            this.lb_test4.Size = new System.Drawing.Size(128, 42);
+            this.lb_test4.TabIndex = 39;
+            this.lb_test4.Text = "Test 4";
+            this.lb_test4.Visible = false;
+            // 
+            // lb_test5
+            // 
+            this.lb_test5.AutoSize = true;
+            this.lb_test5.BackColor = System.Drawing.Color.Transparent;
+            this.lb_test5.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_test5.ForeColor = System.Drawing.Color.LightGreen;
+            this.lb_test5.Location = new System.Drawing.Point(1129, 827);
+            this.lb_test5.Name = "lb_test5";
+            this.lb_test5.Size = new System.Drawing.Size(128, 42);
+            this.lb_test5.TabIndex = 40;
+            this.lb_test5.Text = "Test 5";
+            this.lb_test5.Visible = false;
+            // 
+            // lb_test6
+            // 
+            this.lb_test6.AutoSize = true;
+            this.lb_test6.BackColor = System.Drawing.Color.Transparent;
+            this.lb_test6.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_test6.ForeColor = System.Drawing.Color.Lime;
+            this.lb_test6.Location = new System.Drawing.Point(1283, 827);
+            this.lb_test6.Name = "lb_test6";
+            this.lb_test6.Size = new System.Drawing.Size(128, 42);
+            this.lb_test6.TabIndex = 41;
+            this.lb_test6.Text = "Test 6";
+            this.lb_test6.Visible = false;
+            // 
+            // lb_test7
+            // 
+            this.lb_test7.AutoSize = true;
+            this.lb_test7.BackColor = System.Drawing.Color.Transparent;
+            this.lb_test7.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_test7.ForeColor = System.Drawing.Color.SpringGreen;
+            this.lb_test7.Location = new System.Drawing.Point(1417, 827);
+            this.lb_test7.Name = "lb_test7";
+            this.lb_test7.Size = new System.Drawing.Size(128, 42);
+            this.lb_test7.TabIndex = 42;
+            this.lb_test7.Text = "Test 7";
+            this.lb_test7.Visible = false;
             // 
             // wwm
             // 
@@ -573,6 +674,13 @@
             this.BackgroundImage = global::WWM.Properties.Resources.hintergunrd_pojekt1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.lb_test7);
+            this.Controls.Add(this.lb_test6);
+            this.Controls.Add(this.lb_test5);
+            this.Controls.Add(this.lb_test4);
+            this.Controls.Add(this.lb_test3);
+            this.Controls.Add(this.lb_test2);
+            this.Controls.Add(this.lb_test1);
             this.Controls.Add(this.lb_ende);
             this.Controls.Add(this.lb_unterschrift);
             this.Controls.Add(this.pb_start);
@@ -614,6 +722,7 @@
             this.Name = "wwm";
             this.Text = "Wer wird Milionär - Erzegbirgsedition";
             this.TopMost = true;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.wwm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_kreuza)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_kreuzb)).EndInit();
@@ -664,6 +773,13 @@
         private System.Windows.Forms.PictureBox pb_logo;
         private System.Windows.Forms.Label lb_unterschrift;
         private System.Windows.Forms.Label lb_ende;
+        private System.Windows.Forms.Label lb_test1;
+        private System.Windows.Forms.Label lb_test2;
+        private System.Windows.Forms.Label lb_test3;
+        private System.Windows.Forms.Label lb_test4;
+        private System.Windows.Forms.Label lb_test5;
+        private System.Windows.Forms.Label lb_test6;
+        private System.Windows.Forms.Label lb_test7;
     }
 }
 
