@@ -572,7 +572,7 @@
             this.lb_ende.Name = "lb_ende";
             this.lb_ende.Size = new System.Drawing.Size(1920, 363);
             this.lb_ende.TabIndex = 35;
-            this.lb_ende.Text = "Herzlichen Glückwunsch an unsere Kandidatin \r\nMargret Pflugfelder";
+            this.lb_ende.Text = "Herzlichen Glückwunsch";
             this.lb_ende.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lb_ende.Visible = false;
             // 
